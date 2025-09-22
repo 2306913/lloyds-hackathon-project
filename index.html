@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Local Specialty Connector - Leeds Edition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛍️ Klick</h1>
+    <p class="tagline">Local Specialty Connector. Shop local. Save big.</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#discover">Discover</a></li>
+      <li><a href="#coupons">Coupons</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#business">For Businesses</a></li>
+    </ul>
+  </nav>
+
+  <section id="search">
+    <h2>🔍 Search Brands & Products</h2>
+    <input type="text" id="searchInput" placeholder="Search for a brand or product..." />
+    <button onclick="handleSearch()">Search</button>
+  </section>
+  
+
+  <div class="sponsor-banner">Sponsored by <strong>Yorkshire Bank</strong></div>
+ 
+  
+  
+  <section id="categories">
+    <h2>🗂️ Explore by Category</h2>
+    <div class="category-grid">
+      <div class="category-card">👗 Fashion</div>
+      <div class="category-card">☕ Coffee & Drink</div>
+      <div class="category-card">💄 Cosmetics</div>
+      <div class="category-card">🍯 Craft Food</div>
+      <div class="category-card">🏠 Homeware</div>
+      <div class="category-card">🎨 Art & Gifts</div>
+    </div>
+  </section>
+
+  
+  
+  <section id="coupons">
+    <h2>🎟️ Redeem In-Store Coupons</h2>
+    <p>Use exclusive discounts at Kirkgate Market, Corn Exchange, and Trinity Kitchen pop-ups.</p>
+    <div class="coupon-highlight">
+      <p><strong>🔥 20% off</strong> at Indie Threads — only with Yorkshire Bank app!</p>
+      <p><strong>☕ Free drink</strong> with purchase at Bean & Bloom this weekend!</p>
+    </div>
+    <button>View All Coupons</button>
+  </section>
+
+  <section id="tog24">
+    <h2>🧥 Yorkshire's Own: TOG24 Clothing</h2>
+    <p><strong>Designed in Yorkshire</strong> — Great high quality clothing proudly made to withstand all of the elements.</p>
+    <div class="tog24-brand">
+      <img src="https://sfycdn.speedsize.com/02c6093b-0da5-471d-911b-60169ce0c907/cdn.shopify.com/s/files/1/0044/3911/3818/files/2_7516a8af-98fb-438e-8fa3-13ed38a737a8.jpg?v=1613621868" alt="TOG24 Clothing Logo" />
+      <a href="https://www.tog24.com" target="_blank" class="brand-link">Explore TOG24 Clothing</a>
+    </div>
+  </section>
+  
+  <section id="events" class="highlight">
+    <h2>🎉 Events & Festivals</h2>
+    <p>Get deals during Leeds Indie Food, Light Night Leeds, and more. Support local creativity.</p>
+    <button>See What's On</button>
+  </section>
+
+
+  <section id="carousel">
+    <h2>🏪 Featured Businesses</h2>
+    <div class="carousel">
+      <div class="carousel-item active">
+        <h3>Indie Threads</h3>
+        <p>Stay tuned for their latest boutique fashion drops!</p>
+      </div>
+      <div class="carousel-item">
+        <h3>Bean & Bloom</h3>
+        <p>Specialty coffee and seasonal blends coming soon!</p>
+      </div>
+      <div class="carousel-item">
+        <h3>Glow Local</h3>
+        <p>Natural cosmetics with Leeds flair — launching soon!</p>
+      </div>
+      <button class="carousel-btn prev"> > </button>
+      <button class="carousel-btn next"> < </button>
+    </div>
+    <img src="images.jpeg" alt="bloom and bean" />
+  </section>
+
+  <section id="business">
+    <h2>🏪 For Local Businesses</h2>
+    <ul>
+      <li>Affordable listings & analytics</li>
+      <li>Highlight heritage & sustainability</li>
+      <li>Drive footfall with in-store coupons</li>
+    </ul>
+    <button>Join the Platform</button>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ in Leeds | © 2025 Local Specialty Connector</p>
+  </footer>
+ 
+  <script>
+    function handleSearch() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      if (query === 'lurpak butter') {
+        window.location.href = 'lurpak.html';
+      } else {
+        alert('No results found for "' + query + '". Try another brand.');
+      }
+    }
+  </script>
+  
+  <script>
+    const items = document.querySelectorAll('.carousel-item');
+    let current = 0;
+  
+    document.querySelector('.next').addEventListener('click', () => {
+      items[current].classList.remove('active');
+      current = (current + 1) % items.length;
+      items[current].classList.add('active');
+    });
+  
+    document.querySelector('.prev').addEventListener('click', () => {
+      items[current].classList.remove('active');
+      current = (current - 1 + items.length) % items.length;
+      items[current].classList.add('active');
+    });
+  </script>
+  
+</body>
+</html>
