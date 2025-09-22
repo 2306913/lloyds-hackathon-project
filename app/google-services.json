@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "946777919870",
+    "project_id": "lloyds-hackathon-database",
+    "storage_bucket": "lloyds-hackathon-database.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946777919870:android:52df3369cd7d59f497e32f",
+        "android_client_info": {
+          "package_name": "com.example.lloyds_hackathon_prototype"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYUxcV18tr5G7nnIeDalhPwwclmiIjMos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

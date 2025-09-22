@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lloyds Hackathon"
+        android:textSize="32sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="48dp" />
+
+    <EditText
+        android:id="@+id/loginInput"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New to the app? Contact admin for account setup"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:gravity="center" />
+
+</LinearLayout>

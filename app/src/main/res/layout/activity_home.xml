@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/holo_blue_bright">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Search"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- SEARCH INPUT -->
+        <EditText
+            android:id="@+id/searchInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Search for products, stores, or tags..."
+            android:inputType="text"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:background="@android:drawable/edit_text" />
+
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="@android:color/background_light">
+
+        <Button
+            android:id="@+id/addProductButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="+ Add Product"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@android:color/holo_green_dark"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Portal"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <!-- Product List Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Products"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:padding="8dp" />
+
+        <!-- PRODUCT LIST VIEW -->
+        <ListView
+            android:id="@+id/productListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:drawable/divider_horizontal_bright"
+            android:dividerHeight="1dp"
+            android:padding="8dp"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+
+    <!-- Footer Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="@android:color/background_light"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lloyds Hackathon Prototype"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_bright"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Product"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- Product Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name *"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/productNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter product name"
+            android:inputType="textCapWords"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Store Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Store Name *"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/storeNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter your store name"
+            android:inputType="textCapWords"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Store Address -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Store Address"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/storeAddressInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter store address (optional)"
+            android:inputType="textPostalAddress"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Product Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Description *"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/productDescriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:hint="Describe your product in detail"
+            android:inputType="textMultiLine|textCapSentences"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:gravity="top|start"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Price and Quantity Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- Price -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price (£) *"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/productPriceInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="0.00"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:background="@android:drawable/edit_text" />
+
+            </LinearLayout>
+
+            <!-- Quantity -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity *"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/productQuantityInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:background="@android:drawable/edit_text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Product Tags -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Tags"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Separate tags with commas (e.g., electronics, smartphone, android)"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/productTagsInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="electronics, tech, gadget"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Required Fields Note -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* Required fields"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="@android:color/holo_red_dark"
+                android:background="@android:drawable/btn_default"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/addProductButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="Add Product"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:background="@android:color/holo_green_dark"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
